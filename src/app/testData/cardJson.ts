@@ -1,4 +1,4 @@
-export const CARDJSON: Object[] = [
+export const CARDJSON: any[] = [
     {
         "_id": "616b5c590d5499a33a090908",
         "name": "Opt",
