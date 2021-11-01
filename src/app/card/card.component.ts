@@ -14,7 +14,12 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.card = this._cardService.getSingleCard("Snapcaster Mage");
+    this._getCard("Snapcaster Mage");
+  }
+
+  private _getCard(name: string): void {
+    this._cardService.getSingleCard(name)
+      .subscribe(card => this.card = card);
   }
 
 }
