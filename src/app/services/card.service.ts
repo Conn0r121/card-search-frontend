@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Card } from '../classes/card';
-import { CARDJSON } from '../testData/cardJson';
 import { Observable, of} from 'rxjs';
 import { map } from 'rxjs/operators';
 
