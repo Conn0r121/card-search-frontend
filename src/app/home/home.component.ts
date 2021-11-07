@@ -7,10 +7,18 @@ import { SearchService } from '../services/search.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  value = 'Clear me';
+  searchValue = '';
   constructor(private _searchService: SearchService) { }
 
   ngOnInit(): void {
+  }
+
+  public search(): void {
+    this._searchService.defaultSearch(this.searchValue);
+  }
+
+  public clearSearchValue(): void {
+    this.searchValue = '';
   }
 
 

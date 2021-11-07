@@ -9,6 +9,6 @@ export class SearchService {
   constructor(private _router: Router) { }
 
   public defaultSearch(searchValue: String) {
-    this._router.navigate(['/card', {name: searchValue}]);
+    this._router.navigate(['/card'], { queryParams: { name: searchValue } });
   }
 }

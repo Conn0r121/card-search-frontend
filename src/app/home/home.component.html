@@ -1,8 +1,11 @@
-<mat-form-field class="example-form-field" appearance="fill">
+<mat-form-field class="main-search-bar" appearance="fill">
     <mat-label>Enter Card Name</mat-label>
-    <input matInput type="text" [(ngModel)]="value">
-    <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+    <input matInput type="text" [(ngModel)]="searchValue">
+    <button *ngIf="searchValue" matSuffix mat-icon-button aria-label="Clear" (click)="clearSearchValue()">
       <mat-icon>close</mat-icon>
     </button>
+    <button *ngIf="searchValue" matSuffix mat-icon-button aria-label="Search" (click)="search()">
+        <mat-icon>search</mat-icon>
+      </button>
   </mat-form-field>
   
