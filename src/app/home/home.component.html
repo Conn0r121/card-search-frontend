@@ -3,7 +3,12 @@
   <div>
     <mat-form-field appearance="fill">
       <mat-label>Enter Card Name</mat-label>
-      <input matInput type="text" [(ngModel)]="searchValue" />
+      <input
+        matInput
+        type="text"
+        [(ngModel)]="searchValue"
+        (keyup.enter)="search()"
+      />
       <button
         *ngIf="searchValue"
         matSuffix
