@@ -11,6 +11,17 @@ Node 14.18.0
 2.) Install Environments  
 3.) npm install
 
+## Full Project To Do
+* Wireframes  
+  * Home Page
+  * Individual Card
+  * Search Page
+* Build Search Page
+* Add Additional fields to card
+* Display Card Image
+* Add all versions of cards to db
+* Partial string matching for searches
+*   
 ## Angular Default Readme
 
 ### Development server
