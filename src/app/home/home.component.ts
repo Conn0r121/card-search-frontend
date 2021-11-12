@@ -14,13 +14,10 @@ export class HomeComponent implements OnInit {
   }
 
   public search(): void {
-    this._searchService.defaultSearch(this.searchValue);
+    this._searchService.defaultSearch(this.searchValue.toLocaleLowerCase());
   }
 
   public clearSearchValue(): void {
     this.searchValue = '';
   }
-
-
-
 }
